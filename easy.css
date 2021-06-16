@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(boudewijn-huysmans-GMjKxyV9oSo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container1
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bird1{
+    background-image: url(bird-cells-new.svg);
+    background-size: auto 100%;
+    height: 248px;
+    width: 146px;
+
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    overflow: hidden;
+}
+@keyframes fly-cycle{
+
+    0%{
+      transform: translateX(-1500px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        background-position: -3600px 0;
+        transform: translateX(1400px);
+    }
+}
+
+
+/* Bird2, Bird3 Starts from here */
+
+.container2
+{
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.bird2{
+    background-image: url(bird-cells-new.svg);
+    background-size: auto 100%;
+    height: 248px;
+    width: 146px;
+
+    animation-name: fly-cycle2;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+@keyframes fly-cycle2{
+
+    0%{
+      transform: translateX(-1500px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        background-position: -3600px 0;
+        transform: translateX(1700px);
+    }
+}
+
+
+.container3
+{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.bird3{
+    background-image: url(bird-cells-new.svg);
+    background-size: auto 100%;
+    height: 248px;
+    width: 146px;
+
+    animation-name: fly-cycle3;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+@keyframes fly-cycle3{
+
+    0%{
+      transform: translateX(-30vw);
+    }
+    100%{
+        background-position: -3600px 0;
+        transform: translateX(85vw);
+    }
+}
